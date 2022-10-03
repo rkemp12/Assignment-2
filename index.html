@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Geographic Data Visualization</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body id="body">
+        <h1>
+            There are more bridges in poor condition on the western half of Montana
+            because the mountains make it harder to work on them.  
+        </h1>
+        <div id="container" class="svg-container"></div>
+        <script type="text/javascript">
+        var width = 800;
+        var height = 340;
+        var svg = d3.select("div#container").append("svg").attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 " + width + " " + height).style("background","#ddeaf3")
+        .classed("svg-content", true);
+        </script>
+        <script src="functions.js"></script>
+        <h2>Data Sources:</h2> 
+        <a href="https://gis-mdt.opendata.arcgis.com/datasets/3ced47bdef444fb9b372311655c72aaa/explore?location=46.581698%2C-110.046700%2C6.62">Montana Department of Transportation GIS Data Portal</a> |
+        <a href="https://github.com/kjhealy/us-county/blob/master/data/geojson/gz_2010_us_040_00_500k.json">github kjhealy/us-county</a>
+    </body>
+</html>

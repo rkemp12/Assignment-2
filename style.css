@@ -1,0 +1,22 @@
+.continent {
+    fill: #f0e4dd;
+    stroke: black;
+    stroke-width: 0.5;
+}
+
+.good_bridges {
+    fill: steelblue;
+}
+
+.fair_bridges {
+    fill: rgba(255, 255, 0, 0.678)
+}
+
+.labels {
+    font-family: sans-serif;
+    font-size: 11px;
+    fill: #3c373d;
+}
+#body {
+    background-color: #ddeaf3;
+}
